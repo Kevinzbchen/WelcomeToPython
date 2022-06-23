@@ -4,7 +4,7 @@ from scipy.stats import norm
 import seaborn as sns
 sns.set()
 
-norm_rvs = norm(loc=0, scale=20).rvs(size=10000)
+norm_rvs = norm(loc=0, scale=20).rvs(size=100000)
 plt.hist(norm_rvs, density=True, alpha=0.3, color='b', bins=100, label='original')
 
 mean_array = []
